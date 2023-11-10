@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ODataBug.Web.Models
+namespace ODataBug.Models
 {
     public class Organisation
     {

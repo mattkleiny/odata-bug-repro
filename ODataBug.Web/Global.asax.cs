@@ -25,9 +25,9 @@ namespace ODataBug.Web
                 .EntityType
                 .Expand(maxDepth: 2, SelectExpandType.Allowed, properties: nameof(Contact.BusinessCards));
             
-            builder.EntitySet<Organisation>("Organisation")
+            builder.EntitySet<Organization>("Organization")
                 .EntityType
-                .Expand(maxDepth: 2, SelectExpandType.Allowed, properties: nameof(Organisation.Contacts));
+                .Expand(maxDepth: 2, SelectExpandType.Allowed, properties: nameof(Organization.Contacts));
 
             config.MapODataServiceRoute(
                 routeName: "ODataRoute",
